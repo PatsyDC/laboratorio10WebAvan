@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Registro de Notas de Alumnos</h1>
+  <form #alumnoForm="ngForm" (ngSubmit)="onChangeInputAlumnos()" novalidate>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" [(ngModel)]="newAlumno.nombre" name="nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="dni" class="form-label">DNI:</label>
+      <input type="text" class="form-control" id="dni" [(ngModel)]="newAlumno.dni" name="dni" required>
+    </div>
+    <div class="mb-3">
+      <label for="curso" class="form-label">Curso:</label>
+      <input type="text" class="form-control" id="curso" [(ngModel)]="newAlumno.curso" name="curso" required>
+    </div>
+    <div class="mb-3">
+      <label for="nota" class="form-label">Nota:</label>
+      <input type="text" class="form-control" id="nota" [(ngModel)]="newAlumno.nota" name="nota" required>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="alumnoForm.invalid">Subir Nota</button>
+  </form>
+</div>

@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Lista de Alumnos</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let alumno of alumnos">
+      Nombre: {{ alumno.nombre }}, DNI: {{ alumno.dni }}, Curso: {{ alumno.curso }}, Nota: {{ alumno.nota }}
+    </li>
+  </ul>
+</div>

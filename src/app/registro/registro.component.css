@@ -1,0 +1,15 @@
+
+.custom-container {
+  max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  background-color: honeydew; /* Color de fondo pastel */
+  padding: 20px; /* Añade espacio interno al contenedor */
+  border-radius: 10px; /* Añade bordes redondeados al contenedor */
+  margin-top: 50px;
+}
+
+.button-container {
+  margin-top: 20px; /* Espacio entre el último campo y el botón */
+  display: flex;
+  justify-content: center;
+}

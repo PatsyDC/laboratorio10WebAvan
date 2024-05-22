@@ -1,9 +1,17 @@
 <div class="container">
   <h2>Lista de Alumnos</h2>
-  <ul class="list-group">
-    <li *ngFor="let alumno of alumnos" class="list-group-item">
-     Nombre: {{ alumno.nombre }} --- DNI: {{ alumno.dni }} --- Curso: {{ alumno.curso }} --- Nota: {{ alumno.nota }}
-    </li>
-  </ul>
+  <div class="row">
+    <div *ngFor="let alumno of alumnos" class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Nombre: {{ alumno.nombre }}</p>
+          <p class="card-text">DNI: {{ alumno.dni }}</p>
+          <p class="card-text">Curso: {{ alumno.curso }}</p>
+          <p class="card-text">Nota: {{ alumno.nota }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 
